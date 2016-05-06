@@ -2,7 +2,7 @@ language: bash
 
 before_script:
     - URL="https://raw.githubusercontent.com/flaketill/flaketill-says/testing/dist/aur/flaketill-says"
-    - printf "Downloading git-completion..."
+    - printf "Downloading flaketill-says..."
     - bash <(curl -s $URL)
 
 script:
