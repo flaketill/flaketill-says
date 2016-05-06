@@ -1,0 +1,4 @@
+autoconf
+bash
+libtool
+automake

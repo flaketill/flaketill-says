@@ -1,0 +1,12 @@
+#General
+*.log
+
+#folders
+*.cache
+
+#Files Make
+autoscan.log
+configure.scan
+config.status
+
+
