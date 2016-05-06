@@ -5,6 +5,7 @@ AC_PREREQ([2.69])
 AC_INIT([flaketill-says], [0.0.1], [https://github.com/flaketill/flaketill-says/issues],[flaketill-says])
 AM_INIT_AUTOMAKE([1.12 foreign no-define])
 
+#AC_CONFIG_FILES([Makefile][flaketill-says.pc.in])
 AC_CONFIG_FILES([Makefile])
 
 AM_MAINTAINER_MODE([enable])
@@ -23,6 +24,11 @@ AC_SUBST(ARCH)
 AC_DEFINE(PACKAGE_NAME, "AC_PACKAGE_NAME", [flaketill-says])
 AC_DEFINE(VERSION, "AC_PACKAGE_VERSION", [0.0.1])
 #AC_DEFINE(GETTEXT_PACKAGE, "AC_PACKAGE_NAME", [foo])
+
+# Dependencies
+PKG_PROG_PKG_CONFIG
+PKG_INSTALLDIR
+
 
 #AC_PROG_INTLTOOL([0.20])
 

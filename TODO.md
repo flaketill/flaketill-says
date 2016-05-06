@@ -25,7 +25,7 @@ Distributed Git - Maintaining a Project - Merging Workflows
 	- [ ] Something for install with pacman form text file the dependencies like pip ( python  -> pip install -r /path/to/requirements.txt )
 	- [ ]
 	- [ ]  SSH Keys settings for different github account
-	- [ ]
+	- [ ]  Stow -vt /usr/local/ -R src/
 	- [ ] 
 	- [ ]			
 
@@ -50,7 +50,7 @@ bower.json and package.json ( Grunt, NPM and Bower  )
 - [ ] Build bash script for made each module base like Boilerplate or template with base files
 
 ##Features in the future
-
+- [ ] Sleep
 - [ ] Project Management Software like Redbooth, Basecamp but open source: ProjectLibre, OpenProject and Redmine
 - [ ] Project an integrated ticket system is the way to go like Trac
 - [ ] Task manager like devtodo 2

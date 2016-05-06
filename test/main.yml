@@ -1,0 +1,4 @@
+- include: test.flaketill-says.yaml
+
+- name: enforce permissions and ownership on /usr/src
+  file: path=/usr/src/ state=directory owner=root group=src mode=2775
