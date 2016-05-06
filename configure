@@ -2312,6 +2312,7 @@ END
   fi
 fi
 
+
 ac_config_files="$ac_config_files Makefile"
 
 
@@ -2340,8 +2341,25 @@ fi
 
 
 # Variables
-ARCH=$(uname -s)
+#ARCH=$(uname -s)
 
+
+# Variables
+#FULL-PACKAGE-NAME=flaketill-says
+#PACKAGE_NAME=$(eval echo ${FULL-PACKAGE-NAME} )
+#PACKAGE=flaketill-says
+#VERSION=0.0.1
+#BUG-REPORT-ADDRESS=https://github.com/flaketill/flaketill-says/issues
+
+
+$as_echo "#define PACKAGE_NAME \"flaketill-says\"" >>confdefs.h
+
+
+$as_echo "#define VERSION \"0.0.1\"" >>confdefs.h
+
+#AC_DEFINE(GETTEXT_PACKAGE, "AC_PACKAGE_NAME", [foo])
+
+#AC_PROG_INTLTOOL([0.20])
 
 # Checks for programs.
 
@@ -3547,8 +3565,5 @@ ${PACKAGE_NAME}:
     localstatedir          : $(eval echo ${localstatedir})
        database dir        : $(eval echo ${localstatedir})/lib/flaketill-says/
        cache dir           : $(eval echo ${localstatedir})/cache/flaketill-says/pkg/
-
-    Architecture           : ${ARCH}
-
     flaketill-says version : ${PACKAGE_VERSION}
 "

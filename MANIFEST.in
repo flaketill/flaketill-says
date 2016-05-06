@@ -1,0 +1,6 @@
+include README.md
+include AUTHORS
+
+#recursive-include flaketill-says/src/ *.png *.ico
+
+exclude flaketill-says/src/configure.scan

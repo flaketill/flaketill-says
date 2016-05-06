@@ -22,7 +22,7 @@ Distributed Git - Maintaining a Project - Merging Workflows
 	- [x] Build bash script for make with autotools the packages
 	- [ ] Build shell script to automate the building of packages with makepkg ( /etc/makepkg.conf | ~/.makepkg.conf )
 	- [ ] Organize a framework based project in Git
-	- [ ] 
+	- [ ] Something for install with pacman form text file the dependencies like pip ( python  -> pip install -r /path/to/requirements.txt )
 	- [ ]
 	- [ ] 
 	- [ ]

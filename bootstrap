@@ -1,0 +1,30 @@
+#!/usr/bin/sh -e
+# -*- coding: UTF-8 -*- 
+# Copyright (C) 2016 Armando Ibarra
+#  v0.1 alpha - 2016
+#
+
+
+#automake --add-missing && autoconf && ./configure && make
+
+
+#aclocal \
+#autoheader
+# automake --add-missing --gnu
+#&&  autoreconf -vfi \
+# && find ./ -name Makefile.am \
+# && autoscan \
+# && ./configure --prefix=/usr \
+#automake --add-missing is like:
+#&& automake  --include-deps -a \
+# && autoconf
+
+#./configure --prefix=/usr && make install-strip
+
+
+#autoreconfig -i && ./configure
+
+aclocal \
+&&  autoreconf -vfi \
+&& automake  --include-deps -a \
+&& make &&  make test && make install
