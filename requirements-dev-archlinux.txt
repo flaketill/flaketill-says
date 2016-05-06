@@ -2,3 +2,6 @@ autoconf
 bash
 libtool
 automake
+#autoheader
+pkg-config
+gettext
