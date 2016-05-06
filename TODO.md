@@ -24,7 +24,7 @@ Distributed Git - Maintaining a Project - Merging Workflows
 	- [ ] Organize a framework based project in Git
 	- [ ] Something for install with pacman form text file the dependencies like pip ( python  -> pip install -r /path/to/requirements.txt )
 	- [ ]
-	- [ ] 
+	- [ ]  SSH Keys settings for different github account
 	- [ ]
 	- [ ] 
 	- [ ]			
