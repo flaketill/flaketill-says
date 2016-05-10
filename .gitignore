@@ -36,3 +36,55 @@ lib/*
 bin/*
 sbin
 tmp
+
+
+#############
+## NPM
+#############
+npm-debug.log
+
+#npm
+node_modules
+#bower
+bower_components
+
+#############
+## Python
+#############
+
+*.py[co]
+*~
+*.mo
+*.egg
+*.EGG
+*.egg-info
+*.EGG-INFO
+
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+

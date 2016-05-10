@@ -1,0 +1,29 @@
+usage() {
+  echo 'usage: bootstrap [operations] [option] '
+  echo
+  echo '    -h           - outputs this message'
+  exit
+}
+
+
+#colors bash script
+if [[ -t 1 && ! $COLOR = "NO" ]]; then
+	GREEN="\033[1;32m"
+	RESET="\033[0m"
+	WHITE="\033[1;37m"
+	BLUE="\033[1;34m"
+	RED="\033[1;31m"
+	YELLOW="\033[1;33m"
+fi
+
+gpasswd -a $USER docker
+
+#Arch Linux image with snapshot repository
+#docker pull pritunl/archlinux:latest
+#docker run --rm -t -i pritunl/archlinux:latest /bin/bash
+
+#Debian
+# debootstrap wheezy ./wheezy-chroot http://http.debian.net/debian/
+# cd wheezy-chroot
+# tar cpf - . | docker import - debian
+# docker run -t -i --rm debian /bin/bash

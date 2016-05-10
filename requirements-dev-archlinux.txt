@@ -15,3 +15,11 @@ tree
 retext
 doxygen
 coreutils
+setuptools
+python2-pip
+docker
+debootstrap
+python2-virtualenv
+python2-virtualenvwrapper
+npm
+nodejs

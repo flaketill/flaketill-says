@@ -3,6 +3,8 @@
   debtap
   deb2targz
   retext
+  python2-virtualenvwrapper
+  nodejs-npm2arch
 [pacman]
   stow
   doxygen

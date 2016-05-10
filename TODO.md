@@ -44,6 +44,7 @@ src/
 ###Documentation for package
 
 	- [ ] Generate documentation from source code
+	- [ ] Found automatic dependencies 
 
 
 ### Distributed Git - Maintaining a Project - Merging Workflows
@@ -54,7 +55,23 @@ src/
 
 ## Managing dotfiles with GNU stow
 
-	- [ ] 
+	- [ ]
+
+For not install the package and create a .egg-link in the deployment directory
+
+```bash
+$ cd flaketill-says
+$ tree -a src/
+$ sudo python2 setup.py develop
+```
+
+To “freeze” the current state of the environment packages. To do this, run
+
+```bash
+$ cd flaketill-says
+$ tree -a src/
+$ sudo pip2 freeze > develop-requirements.txt
+```
 
 ## Owns shell script 
 

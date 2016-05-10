@@ -1,1 +1,4 @@
 doxypy==0.4.1
+pipreqs==0.4.2
+virtualenv
+virtualenvwrapper
