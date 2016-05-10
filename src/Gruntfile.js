@@ -25,6 +25,20 @@ module.exports = function(grunt) {
         dest: 'build/<%= pkg.name %>.sh'
       }
     },
+    exec: {
+        removeLogs: {
+            cmd: 'rm *.log',
+            stderr: false
+        },
+        removeTmp: {
+            cmd: 'rm -rf .tmp',
+            stderr: false
+        }
+        ,
+        list_files: {
+            cmd: 'tree -a dotfiles'
+        }
+    },
     // Watch Config
     watch: {
         files: ['views/**/*'],
@@ -70,6 +84,6 @@ module.exports = function(grunt) {
   //grunt.registerTask('launch', ['wait', 'open']);
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['exec:removeLogs', 'exec:removeTmp','exec:list_files']);
 
 };

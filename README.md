@@ -62,6 +62,7 @@ Test grunt
 ```bash
 $ sudo npm install -g grunt-cli
 $ sudo npm install grunt-exec --save-dev
+$ sudo npm install --save-dev load-grunt-tasks
 $ cd flaketill-says/src
 $ grunt
 ```
