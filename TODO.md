@@ -10,6 +10,7 @@ Things that I still have to do, with explanations and justifications for each on
 ## Development
 
 
+### 
 ```bash
 $ cd flaketill-says
 $ tree -a src/
@@ -38,8 +39,14 @@ src/
 ├── .stow-local-ignore
 └── tmp
 
+### Software-Building-HOWTO
 
-Distributed Git - Maintaining a Project - Merging Workflows
+###Documentation for package
+
+	- [ ] Generate documentation from source code
+
+
+### Distributed Git - Maintaining a Project - Merging Workflows
 
 ## Use autotools for 
 

@@ -4,6 +4,12 @@
 #  v0.1 alpha - 2016
 # 
 
+# Documentation for Doxygen 
+
+## A binary test for package flaketill-says -*- shell-script -*-. 
+## @author Armando Ibarra - armandoibarra1@gmail.com
+## @file
+
 #----------------------------------------------------------------------
 # Template file sh or bash 
 #

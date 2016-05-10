@@ -2,5 +2,8 @@
   gitkraken
   debtap
   deb2targz
+  retext
 [pacman]
   stow
+  doxygen
+  coreutils

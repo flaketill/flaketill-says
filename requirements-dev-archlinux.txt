@@ -12,3 +12,6 @@ devtools
 git
 make
 tree
+retext
+doxygen
+coreutils
