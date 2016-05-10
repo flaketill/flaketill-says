@@ -9,4 +9,28 @@ autoscan.log
 configure.scan
 config.status
 
+ABOUT-NLS
+aclocal.m4
+autom4te.cache
+config.h
+config.h.in
+config.log
+config.status
+configure
+configure.lineno
+cov-int
+cscope.in.out
+cscope.out
+cscope.po.out
+intl
+libtool
+Makefile
+Makefile.in
+*.tar.gz
 
+#Ignorate build and lib dirs
+build
+lib/*
+
+#Ignorate exes
+bin/*

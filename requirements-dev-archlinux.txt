@@ -4,3 +4,6 @@ bash
 libtool
 automake
 installwatch
+#autoheader
+pkg-config
+gettext

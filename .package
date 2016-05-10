@@ -1,0 +1,5 @@
+NAME="flaketill-says"
+DESCRIPTION="An app for your console for manager proyects in the future i'll build an app like jarvis"
+EMAIL="armandoibarra1@gmail.com"
+AUTHOR="Armando Ibarra"
+AUTHOR_EMAIL="$AUTHOR <$EMAIL>"
