@@ -1,0 +1,31 @@
+package:
+  name: flaketill-says
+  version: "0.0.1"
+
+source:
+  path: ../src
+  git_rev: v0.0.1
+  git_url: https://github.com/flaketill/flaketill-says.git
+
+requirements:
+  build:
+    script: python setup.py install
+    always_include_files:
+      - bin/flaketill-says
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - flaketill-says
+  requires:
+    nose
+  commands:
+    - flaketill-says -h
+about:
+  home: https://github.com/flaketill/flaketill-says
+  license: GLP
+  license_file: LICENSE
+  summary: An app for your console for manager proyects in the future i'll build an app like jarvis

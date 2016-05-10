@@ -1,0 +1,3 @@
+--dir=$HOME/Developer/flaketill_armandoibarra1/flaketill-says/src
+--target=$HOME/stow/flaketill-says-0.0.1
+--ignore=\.pyc

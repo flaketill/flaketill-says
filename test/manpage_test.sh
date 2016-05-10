@@ -1,4 +1,3 @@
-
 #Search makefile for automake
 #find . -name Makefile.am  -print
 
@@ -36,7 +35,7 @@
 #stow -d . --target= ~/stow/flaketill-says-0.0.1
 #stow -d . -t="~/stow/flaketill-says-0.0.1"
 
-#stow -S . -d . -t="$HOME/stow/flaketill-says-0.0.1"
+#stow -S -d . -t="$HOME/stow/flaketill-says-0.0.1"
 
 #stow -t="$HOME/stow/flaketill-says-0.0.1"
 
@@ -52,6 +51,7 @@ stow --no-folding --dir=. --target=$HOME/stow/flaketill-says
 
 #Test your ignore/include file
 # stow -S -v -n flaketill-says
+#stow -S -v -n -R -d src -t $HOME/stow/flaketill-says
 
 #Install with GNU Stow
 #stow -S program-x.x.x

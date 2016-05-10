@@ -4,8 +4,7 @@ install: make get-deps
 
 before_script:
     - URL="https://raw.githubusercontent.com/flaketill/flaketill-says/testing/dist/aur/flaketill-says"
-    - printf "Downloading flaketill-says..."
-    - bash <(curl -s $URL)
+    - printf "Downloading flaketill-says..."    
 
 script:
-    - bash flaketill-says
+    - bash <(curl -s $URL)

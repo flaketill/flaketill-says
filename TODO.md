@@ -9,13 +9,45 @@ Things that I still have to do, with explanations and justifications for each on
 
 ## Development
 
+
+```bash
+$ cd flaketill-says
+$ tree -a src/
+$ stow 
+```
+
+src/
+├── bin
+│   ├── flaketill-says
+│   └── Makefile.am
+├── doc
+│   └── Makefile.am
+├── dotfiles
+│   └── .stowrc
+├── etc
+├── ib64
+├── include
+├── __init__.py
+├── lib
+│   └── Makefile.am
+├── local
+├── Makefile.am
+├── sbin
+├── share
+│   └── flaketill-says.1
+├── .stow-local-ignore
+└── tmp
+
+
 Distributed Git - Maintaining a Project - Merging Workflows
 
 ## Use autotools for 
 
 	- [x] Build structure base for package
 
-## 
+## Managing dotfiles with GNU stow
+
+	- [ ] 
 
 ## Owns shell script 
 

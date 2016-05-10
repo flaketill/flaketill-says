@@ -1,0 +1,6 @@
+[yaourt]
+  gitkraken
+  debtap
+  deb2targz
+[pacman]
+  stow
