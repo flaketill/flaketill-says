@@ -8,3 +8,6 @@ installwatch
 pkg-config
 gettext
 stow
+devtools
+git
+make
