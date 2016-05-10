@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+# -*- coding: UTF-8 -*- 
+# Copyright (C) 2016 Armando Ibarra
+#  v0.1 alpha - 2016
+# 
+
+#variables
+
+#autor and project data
+AUTHOR='Ing. Armando Ibarra <armandoibarra1@gmail.com>'
+COPYRIGHT='Copyright (c) 2016, armandoibarra1@gmail.com'
+LICENSE='GNU GPL Version 3'
+
+WEB_SITE="https://github.com/flaketill/flaketill-says"
+VERSION_SCRIPT="0.0.1 alpha"
+
+#colors bash script
+GREEN="\033[1;32m"
+RESET="\033[0m"
+WHITE="\033[1;37m"
+BLUE="\033[1;34m"
+RED="\033[1;31m" 
+YELLOW="\033[1;33m"
+
+THIS_SCRIPT_PATH=`readlink -f $0`
+THIS_SCRIPT_DIR=`dirname ${THIS_SCRIPT_PATH}`
+
