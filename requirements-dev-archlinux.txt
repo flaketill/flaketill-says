@@ -7,3 +7,4 @@ installwatch
 #autoheader
 pkg-config
 gettext
+stow

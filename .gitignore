@@ -34,3 +34,5 @@ lib/*
 
 #Ignorate exes
 bin/*
+sbin
+tmp
