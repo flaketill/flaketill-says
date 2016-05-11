@@ -44,7 +44,9 @@ src/
 ###Documentation for package
 
 	- [ ] Generate documentation from source code
-	- [ ] Found automatic dependencies 
+	- [ ] Found automatic dependencies
+	- [ ] Build Github page https://pages.github.com/
+	- [x] Build Github page https://flaketill.github.io/
 
 
 ### Distributed Git - Maintaining a Project - Merging Workflows
