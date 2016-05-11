@@ -82,7 +82,7 @@ $ sudo pip2 freeze > develop-requirements.txt
 	- [ ]
 	- [ ]  SSH Keys settings for different github account
 	- [ ]  Stow -vt /usr/local/ -R src/
-	- [ ] 
+	- [ ]  SENDING NOTIFICATIONS TO PUSHOVER https://pushover.net/
 	- [ ]			
 
 ## General

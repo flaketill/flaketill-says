@@ -1,6 +1,6 @@
 AUTOMAKE_OPTIONS = foreign
 
-SUBDIRS = src
+SUBDIRS = src test
 dist_doc_DATA = README.md
 
 
@@ -25,6 +25,17 @@ dist_man_MANS = pkg-config.1
 EXTRA_DIST =	\
 	COPYNG		\
 	autogen.sh	\
-	bootstrap
+	bootstrap  \
+	src/local/bin/flaketillsays-helpers.sh \
+	src/share/flaketill-says.1
+
+# installing man pages
+man1_MANS = flaketill-says.1
+
+install-data-hook:
+	[[ "$(DESTDIR)" == "" ]] && $(sbindir)/flaketillsays-helpers.sh || :
+	@[[ "$(DESTDIR)" != "" ]] &&	(echo "===============================================" && \
+									echo "ERROR: " && \
+									echo "===============================================") || :
 
 #@echo "error: bash is required to include"
