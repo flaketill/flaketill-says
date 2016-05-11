@@ -1,8 +1,40 @@
-# README #
+										README
+==========================
 
-==========================
-flaketill-says
-==========================
+
+<img src="https://artpcweb.appspot.com/images/favicon.ico" align="right" />
+# flaketill-says [![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg?maxAge=2592000?style=plastic)](https://github.com/flaketill/flaketill-says/releases)
+> 
+
+<p align="center">
+<!--<a name="top" href="https://artpcweb.appspot.com"><img src="https://raw.githubusercontent.com/flaketill/flaketill-says/master/screenshots/logo.png"></a>-->
+
+<a name="top" href="https://artpcweb.appspot.com"><img src="https://artpcweb.appspot.com/images/logo_artpc.png"></a>
+</p>
+
+<p align="center">
+<b><a href="#overview">Overview</a></b>
+|
+<b><a href="#features">Features</a></b>
+|
+<b><a href="#installation">Installation</a></b>
+|
+<b><a href="#updating">Updating</a></b>
+|
+<b><a href="#setup">Setup</a></b>
+|
+<b><a href="#structure">Structure</a></b>
+|
+<b><a href="#team-members">Credits</a></b>
+|
+<b><a href="#license">License</a></b>
+</p>
+
+[![Build Status](https://api.travis-ci.org/sindresorhus/pageres.svg?branch=master)](https://travis-ci.org/sindresorhus/pageres)
+[![travis](https://img.shields.io/travis/b4b4r07/dotfiles.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
+[![platform](https://img.shields.io/badge/platform-OS%20X%20%7C%20Linux-808080.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
+[![doc](https://img.shields.io/badge/documentation-etc-red.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
 
 Package: flaketill-says
 
@@ -10,15 +42,48 @@ License: Licensed under the GNU GPL v3
 
 Description:
 
-An app for your console for manager proyects in the future i'll build an app like jarvis
+An app for your console for manager proyects, in the future i'll build an app like jarvis
 
 This project is development for Ing. Armando Ibarra <armandoibarra1@gmail.com>
 
 For the versions available, see the [tags on this repository](https://github.com/flaketill/flaketill-says/tags). 
 
-Website under construction: https://artpcweb.appspot.com
-Facebook: https://www.facebook.com/erpmtics
-Twitter: https://twitter.com/erpmtics
+- `Website under construction`: https://artpcweb.appspot.com
+- `Facebook`: https://www.facebook.com/erpmtics
+- `Twitter`: [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&maxAge=2592000?style=plastic)](https://twitter.com/erpmtics)
+
+
+>### *Features*
+- **LINUX** support
+
+### *But why you build this package?*
+Because i love linux and development!
+
+***DEMO:***
+
+[![](https://raw.githubusercontent.com/flaketill/flaketill-says/master/screenshots/flaketill-says-demo.gif)][flaketill-says]
+
+<a name="#installation"></a>To quickly install:
+
+```console
+$ curl -sL https://raw.githubusercontent.com/flaketill/flaketill-says/master/src/flaketill-shell/modules/install-flaketill-says.sh | sh
+"
+```
+
+On Arch Linux 
+
+```console
+$ sudo yaourt -s flaketill-says
+"
+```
+
+# Table of Contents
+
+- [Installation](#installation)
+    - [Database](#database)
+- [Setup](#setup)
+    - [Settings](#Settings)
+* [Team Members](#team-members)
 
 ##Technologys
 
@@ -61,6 +126,14 @@ To quickly build your environment if you use Linux, run the
 file make-linux.sh, for Mac OS X make-macosx.sh and for windows
 make-win.bat
 
+
+#installation
+
+###database
+
+##setup
+
+###Settings
 
 ### Man Page
 
@@ -109,6 +182,15 @@ $ sudo pip2 install -r dev-pip-dependencies.txt
 $ sudo pip2 install -r requirements.txt
 ```
 
+```Python
+#!/usr/bin/env python2
+# -*- coding: UTF-8 -*- 
+# Distribution setup file
+
+import os
+
+```
+
 For build requirements.txt on src
 
 ```bash
@@ -129,6 +211,54 @@ $ cd flaketill-says/src
 $ grunt --force
 ```
 
+Development Workflow
+-------------
+
+
+```bash
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/flaketill/flaketill-says/master/src/flaketill-shell/modules/install-flaketill-says.sh)"
+$ bash -c "$(wget -qO - https://raw.githubusercontent.com/flaketill/flaketill-says/master/src/flaketill-shell/modules/install-flaketill-says.sh)"
+```
+
+Screenshots
+-------------
+
+[![Alt][screenshot1_thumb]][screenshot1] 
+
+[screenshot1_thumb]: https://raw.github.com/flaketill/flaketill-says/master/screenshots/flaketill-says_thumb.png
+[screenshot1]: https://raw.github.com/flaketill/flaketill-says/master/screenshots/flaketill-says.png
+
+## Trial
+
+If you have [Vagrant](https://docs.vagrantup.com/v2/installation/) and [Virtualbox](https://www.virtualbox.org/wiki/Downloads) already installed, this is both faster and cleaner than downloading and compiling all the dependencies. To install, simply do the following:
+
+> **NOTE**: A sample Vagrantfile can be found here => [`Vagrantfile`](https://raw.githubusercontent.com/flaketill/flaketill-says/master/src/Vagrantfile).
+
+```console
+$ sudo pacman -S --noconfirm vagrant gcc make
+$ vagrant init 
+$ vagrant up
+```
+
+Getting started
+
+Download the base box and get the box started
+
+```bash
+$ vagrant box add archlinux-x86_64 ADDRESS
+$ mkdir test_environment
+$ cd test_environment
+$ vagrant init archlinux-x86_64
+$ vagrant up
+$ vagrant ssh
+```
+
+If you want to try my dotfiles without polluting your development environment, it would be best to use a Vagrant. Have fun by setting and please remove it after finish.
+
+```console
+$ vagrant destroy -f   # when finished, destroy the VM
+```
+
 Documentation
 -------------
 
@@ -143,9 +273,26 @@ https://github.com/flaketill/flaketill-says/blob/master/src/doc/manual/manual.ht
 
 Star this repo if you found it useful. Use the github issue tracker to give feedback on this repo and to ask for scaffolds for other use cases.
 
+# <a name="team-members"></a>Team Members
+* "Armando Ibarra" <armandoibarra1@gmail.com>
+
+[![artpc](https://gravatar.com/avatar/6e3af44ff27ae2c67fae0adda36e9b44?s=144)](https://sindresorhus.com)
+
 ## Contributing changes
 
 See [CONTRIB.md](CONTRIB.md)
 
 ## Licensing
-See [LICENSE](LICENSE)
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, **"flaketill"** [armandoibarra1@gmail.com](http://erpmtics.com/) has waived all copyright and related or neighboring rights to this work.
+
+Please for more details see [LICENSE](LICENSE)
+
+## References
+
+* [Vagrant - Getting Started](http://docs.vagrantup.com/v2/getting-started/index.html)
+*  [A List of base boxes for Vagrant](http://vagrantbox.es/)
+*  [ArchLinux and Vagrant](https://wiki.archlinux.org/index.php/Vagrant)
+

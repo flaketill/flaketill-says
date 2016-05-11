@@ -46,7 +46,8 @@ src/
 	- [ ] Generate documentation from source code
 	- [ ] Found automatic dependencies
 	- [ ] Build Github page https://pages.github.com/
-	- [x] Build Github page https://flaketill.github.io/
+	- [x] Build Github page https://flaketill.github.io/ 
+	- [ ] Build gif for demo with byzanz-record -d 25 -x 0 -y 0 -w 1024 -h 768 flaketill-says-demo.gif
 
 
 ### Distributed Git - Maintaining a Project - Merging Workflows
