@@ -1,0 +1,17 @@
+pythonapp:
+  build: ./django-app
+  command: "python manage.py runserver 0.0.0.0:80"
+  links:
+    - postgres
+    - flaskapp
+  volumes:
+    - /vagrant/django-app/src:/opt/django-app
+
+proxy:
+  build: ./proxy
+  ports:
+    - "80:80"
+  volumes:
+    - /vagrant/proxy/sites-enabled:/etc/nginx/sites-enabled
+  links:
+    - pythonapp

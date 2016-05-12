@@ -1,0 +1,48 @@
+# -*- mode: ruby -*-
+
+# To launch a clean arch linux x64 system in the virtual machine
+# with [Vagrant](http://vagrantup.com), run:
+#
+# Vagrant config for basic Python, Bash and Node development
+# Add to .gitignore
+# .vagrant/*
+
+# $ sudo pacman -S --noconfirm vagrant gcc make
+# $ vagrant box add archlinux-x86_64 ADDRESS
+# $ mkdir test_environment
+# $ cd test_environment
+# $ vagrant init archlinux-x86_64
+# $ vagrant init 
+# $ vagrant up
+# $ vagrant ssh
+
+#require 'json'
+#require 'yaml'
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+	# Specify the base box
+	config.vm.box = "archlinux-x86_64"
+	#config.vm.box_url = "http://files.vagrantup.com/archlinux-x86_64.box"
+
+	# Setup port forwarding
+	config.vm.network :forwarded_port, guest: 80, host: 8931, auto_correct: true
+
+    # Setup synced folder
+    config.vm.synced_folder "./", "/var/www", create: true, group: "www-data", owner: "www-data"
+
+    # VM specific configs
+    config.vm.provider "virtualbox" do |v|
+    	v.name = "Test Vagrant from flaketill-says"
+    	v.customize ["modifyvm", :id, "--memory", "1024"]
+    	vb.customize ["modifyvm", :id, "--usb", "off"]
+    end
+
+    # Shell provisioning
+    # config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+    config.vm.provision "shell" do |s|
+    	s.path = "environments/vagrant/linux/archx64/setup.sh"
+    end
+
+end
