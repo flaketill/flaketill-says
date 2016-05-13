@@ -211,6 +211,12 @@ $ cd flaketill-says/src
 $ grunt --force
 ```
 
+To test a Make i write a boostrap for this
+
+```bash
+$ ./boostrap
+```
+
 Development Workflow
 -------------
 
