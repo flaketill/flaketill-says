@@ -4,16 +4,26 @@
 #-----------------------------------------------------------------------------
 
 try:
+    import sys
+    from setuptools import setup
+
+    kw = {}
+    if sys.version_info >= (3,):
+        kw['use_2to3'] = True
+except ImportError:
+    pass
+
+try:
 	import os,stat, re, sys, platform,shutil, inspect, difflib
 	import subprocess
 
 	from os.path import abspath, dirname, join
 
-	from esky import bdist_esky
+	#from esky import bdist_esky
 
 	from setuptools import setup, find_packages
-	from distutils.core import setup
-	from cx_Freeze import setup, Executable
+	#from distutils.core import setup
+	#from cx_Freeze import setup, Executable
 
 	#from distutils.command.build_py import build_py
 	#from distutils.command.sdist import sdist
@@ -32,7 +42,7 @@ except ImportError:
     """)
     log.debug('local_settings failed to import', exc_info=True)
 
-    from distutils.core import setup, Extension
+    #from distutils.core import setup, Extension
 
 except Exception, e:
 	raise e
@@ -65,8 +75,8 @@ def read(fname):
 DESC = ('Python app for manager it: run comands remote mode under Windows, Linux or Mac OS X into stand-alone')
 
 
-LONG_DESC = read('../README.md')
-
+LONG_DESC = read('README.rst')
+#REQUIREMENTS_FILE = read('requirements.txt')
 LONG_DESC2 = """
 flaketill-says is a program that try eject commans on remote machines
 under Windows, Linux, Mac OS X.
@@ -261,18 +271,23 @@ options = {
 ''' 
 
 includes = ["atexit","re"]   
+#REQUIREMENTS = [i.strip() for i in open(REQUIREMENTS_FILE).readlines()]
+#REQUIREMENTS = [i.strip() for i in open("requirements.txt").readlines()]
+
+#setuptools == 21.0.0
+#tox == 2.3.1
 
 # Build the app and the esky bundle
 setup(
-	#install_requires=['setuptools','bbfreeze','cx_Freeze','libevent','pyevent']
-    install_requires=[i.strip() for i in open("requirements.txt").readlines()]
+	install_requires=['setuptools',"tox"]
+    #install_requires=REQUIREMENTS
 	,packages=find_packages()
-	,package_data={ #https://docs.python.org/2/distutils/setupscript.html#installing-package-data
-        'flaketill-says_agent': ['core/ui/icons/*.png', 'core/ui/icons/*.ico']
-    }
+	#,package_data={ #https://docs.python.org/2/distutils/setupscript.html#installing-package-data
+    #    'flaketill-says_agent': ['core/ui/icons/*.png', 'core/ui/icons/*.ico']
+    #}
     ,platforms = ['linux','mac os x', 'windows']
 	,name =application_title
-	,version = "0.1"
+	,version = "0.0.1"
 	,description=DESC
     ,long_description=LONG_DESC
     ,keywords='flaketill-says, python, manager it'
@@ -286,6 +301,11 @@ setup(
     ,url='http://artpcweb.appspot.com'
     ,download_url='http://artpcweb.appspot.com/projects/flaketill-says/manager'
     ,scripts=["activate.sh"] #,"appname/gui/script2.pyw"]
+    ,use_2to3=True
+    #,convert_2to3_doctests=[REQUIREMENTS_FILE]
+    #,use_2to3_fixers=['your.fixers']
+    #,use_2to3_exclude_fixers=['lib2to3.fixes.fix_import']
+    #**kw
     #,options = dict(bdist_esky=ESKY_OPTIONS) #{"build_exe" : {"includes" : includes }}
     #,executables = [Executable(main_python_file)] #, base = base)]
     #,data_files = DATA_FILES,

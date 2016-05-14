@@ -26,4 +26,29 @@ files
 
 application.ini
 
+##Update pip 
+
+```console
+$ sudo pip2 install --upgrade pip
+```
+
+To generating a tox.ini file automatically, to work with python2 use export
+
+```console
+$ export envpython="python2"
+$ tox-quickstart
+```
+
+
+```console
+$ su -c "pip2 install -r requirements.txt"
+```
+
+To upgrade pip with easy_install
+
+```console
+$ sudo easy_install -U setuptools
+```
+
+
 Happy packaging!

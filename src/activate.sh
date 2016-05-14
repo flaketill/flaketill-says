@@ -64,7 +64,8 @@ YELLOW="\033[1;33m"
 THIS_SCRIPT_PATH=`readlink -f $0`
 THIS_SCRIPT_DIR=`dirname ${THIS_SCRIPT_PATH}`
 
-DATE=$(date +"%Y.%m.%d")HERE = os.path.abspath(os.path.dirname(__file__))
+DATE=$(date +"%Y.%m.%d")
+#HERE = os.path.abspath(os.path.dirname(__file__))
 
 #Test docker
 #Befor 

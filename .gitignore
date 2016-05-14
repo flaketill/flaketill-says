@@ -104,7 +104,13 @@ develop-eggs
 # Installer logs
 pip-log.txt
 
+#############
+## Test suites
+#############
+#
+.tox
 
+#
 ############
 ## Windows
 ############
