@@ -273,13 +273,37 @@ options = {
 includes = ["atexit","re"]   
 #REQUIREMENTS = [i.strip() for i in open(REQUIREMENTS_FILE).readlines()]
 #REQUIREMENTS = [i.strip() for i in open("requirements.txt").readlines()]
+REQUIREMENTS = ["docutils>=0.12", "setuptools==21.0.0","tox==2.3.1","unittest2==1.1.0"]
+
+
+from setuptools.command.test import test as TestCommand
+import sys
+
+class Tox(TestCommand):
+    user_options = [('tox-args=', 'a', "Arguments to pass to tox")]
+    def initialize_options(self):
+        TestCommand.initialize_options(self)
+        self.tox_args = None
+    def finalize_options(self):
+        TestCommand.finalize_options(self)
+        self.test_args = []
+        self.test_suite = True
+    def run_tests(self):
+        #import here, cause outside the eggs aren't loaded
+        import tox
+        import shlex
+        args = self.tox_args
+        if args:
+            args = shlex.split(self.tox_args)
+        #errno = tox.cmdline(args=args)
+        #sys.exit(errno)
 
 #setuptools == 21.0.0
 #tox == 2.3.1
 
 # Build the app and the esky bundle
 setup(
-	install_requires=['setuptools',"tox"]
+	install_requires=REQUIREMENTS
     #install_requires=REQUIREMENTS
 	,packages=find_packages()
 	#,package_data={ #https://docs.python.org/2/distutils/setupscript.html#installing-package-data
@@ -301,6 +325,9 @@ setup(
     ,url='http://artpcweb.appspot.com'
     ,download_url='http://artpcweb.appspot.com/projects/flaketill-says/manager'
     ,scripts=["activate.sh"] #,"appname/gui/script2.pyw"]
+    #,test_suite="unit2"
+    ,tests_require=['tox']
+    ,cmdclass = {'test': Tox}
     ,use_2to3=True
     #,convert_2to3_doctests=[REQUIREMENTS_FILE]
     #,use_2to3_fixers=['your.fixers']
