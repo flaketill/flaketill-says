@@ -1,0 +1,30 @@
+/* Format copied from http://humanstxt.org/humans.txt */
+
+/* TEAM */
+
+  Webmaster: Armando Ibarra
+  Web: https://artpc.appspot.com
+  Contact: armandoibarra1 [at] gmail [at] com
+  Twitter: @erpmtisc
+  Flacebook: erpmtics
+
+/* OWNER */
+
+  Name: Armando Ibarra
+  Site: https://github.com/flaketill
+  Location: Mexico, Chihuahua
+
+  Website Lead: artpc.appspot.com
+  Contact: armandoibarra1@gmail.com
+  Twitter: @erpmtics
+
+/* THANKS */
+
+/* CONTRIBUTORS */
+
+/* TECHNOLOGY  */
+
+    CSS3, XHTML, jQuery, Modernizr,
+    ARr linux, nginx, OpenSSL, MySQL, Git,
+    Bash, PHP, Sublime Text, GIMP, Inkscape,
+    Twitter, Python

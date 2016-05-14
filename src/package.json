@@ -59,6 +59,8 @@
     "grunt-nodemon": "~0.1.2",
     "grunt-open": "~0.2.2",
     "grunt-wait": "~0.1.0",
+    "nw": "~0.1.0",
+    "yuidocjs": "~0.1.0",
     "matchdep": "~0.1.2",
     "moment": "~2.0.0",
     "sublime-grunt-build": "*"

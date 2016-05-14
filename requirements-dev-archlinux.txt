@@ -23,3 +23,10 @@ python2-virtualenv
 python2-virtualenvwrapper
 npm
 nodejs
+bower
+screen
+gulp
+wxpython2.8
+wxpython
+nwjs-bin
+python2-twine

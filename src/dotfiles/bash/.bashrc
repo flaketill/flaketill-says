@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias app_msn='franz'
-alias whatsapp='whatsie'
+alias whatsapp='whatsie'  v
 alias flaketill="flaketill-says"
 
 PS1='[\u@\h \W]\$ '

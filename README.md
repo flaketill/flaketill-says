@@ -126,8 +126,25 @@ To quickly build your environment if you use Linux, run the
 file make-linux.sh, for Mac OS X make-macosx.sh and for windows
 make-win.bat
 
+#Features
+
+- Support on linux
+
+| Package | Options | Args | Desciption
+|-----------|---------------|-----------|
+| flaketill-says | ls-opt | | Show option package
 
 #installation
+
+## Using Package Control (Recommended)
+ 
+To install for now just on arch linux aur
+
+1. 
+```bash
+$ yaourt -S flaketill-says
+```
+## Manual Install
 
 ###database
 
@@ -217,6 +234,34 @@ To test a Make i write a boostrap for this
 $ ./boostrap
 ```
 
+##How to package and distribute your apps
+
+##Python
+
+###Source Distributions
+
+```bash
+$ python setup.py sdist
+```
+###Wheels
+
+A wheel is a built package that can be installed without needing to go through the “build” process
+
+To build a Universal Wheel:
+
+```bash
+$ python setup.py bdist_wheel --universal
+```
+
+##Mac OS X
+
+To install easy you can use brew
+
+```bash
+$ brew install imagemagick
+```
+
+
 Development Workflow
 -------------
 
@@ -265,6 +310,24 @@ If you want to try my dotfiles without polluting your development environment, i
 $ vagrant destroy -f   # when finished, destroy the VM
 ```
 
+##Working in “Development Mode”
+
+With python and pip
+
+```console
+$ pip install -e .
+```
+
+If you don’t want to install any dependencies at all, you can run:
+
+```console
+$ pip install -e . --no-deps
+```
+
+##Test
+
+-[Selenium IDE tests](http://docs.seleniumhq.org/projects/ide/)
+
 Documentation
 -------------
 
@@ -274,6 +337,11 @@ You can also find on-line versions at web site.
 https://github.com/flaketill/flaketill-says/blob/master/src/doc/html/index.html
 https://github.com/flaketill/flaketill-says/blob/master/src/doc/manual/manual.html 
 
+https://yui.github.io/yuidoc/syntax/
+
+Directory structure
+
+https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 
 ### Feedback
 
@@ -294,6 +362,8 @@ See [CONTRIB.md](CONTRIB.md)
 
 To the extent possible under law, **"flaketill"** [armandoibarra1@gmail.com](http://erpmtics.com/) has waived all copyright and related or neighboring rights to this work.
 
+Follow me: @erpmtics
+
 Please for more details see [LICENSE](LICENSE)
 
 ## References
@@ -302,3 +372,15 @@ Please for more details see [LICENSE](LICENSE)
 *  [A List of base boxes for Vagrant](http://vagrantbox.es/)
 *  [ArchLinux and Vagrant](https://wiki.archlinux.org/index.php/Vagrant)
 
+##Special Thanks
+
+The most important topic, thanks to all team proyects:
+
+- Gnu:
+    + GNU Autotools
+- Gnu/Linux
+- Arch linux
+- Sublime Text
+- Python
+- Bash
+- 

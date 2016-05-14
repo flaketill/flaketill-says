@@ -1,0 +1,14 @@
+language: bash
+sudo: true
+
+os:
+  - linux
+  - osx
+
+before_install:
+
+script:
+- ./script.sh
+
+after_success:
+- ./script.sh
