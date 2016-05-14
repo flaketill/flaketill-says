@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.0.1 
+Exec=/bin/bash flaketill-says
+GenericName[es]=flaketill-says
+GenericName=flaketill-says
+Icon=/usr/share/icons/hicolor/16x16/apps/flaketill-says/flaketill-says.png
+MimeType=
+Name[es]=flaketill-says
+Name=flaketill-says
+Path=/usr/bin/flaketill-says
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+Categories=Development

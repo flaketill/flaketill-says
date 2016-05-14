@@ -1,3 +1,19 @@
+# Get the current source file name
+current="${BASH_SOURCE[0]}"
+
+# Retrieve the source directory
+SOURCE_DIR="$(dirname "$(readlink -f "$current")")"
+
+# Related directories
+PROJECT_NAME="$(basename "$SOURCE_DIR")"
+ENV_DIR=$(readlink -f "${SOURCE_DIR}/../../")
+PROJECT_DIR="${SOURCE_DIR}/${PROJECT_NAME}"
+
+# Activate the virtual environment
+source "${ENV_DIR}/bin/activate"
+cd "$PROJECT_DIR"
+export PATH="$PATH:$(pwd)"
+
 usage() {
   echo 'usage: bootstrap [operations] [option] '
   echo

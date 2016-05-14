@@ -89,6 +89,8 @@ bower_components
 
 
 # Packages
+#
+*.eggs
 *.egg
 *.egg-info
 dist
