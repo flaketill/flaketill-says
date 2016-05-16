@@ -1,6 +1,22 @@
 language: bash
+sudo: required
+notifications:
+  email:
+    - armandoibarra1@gmail.com
+  slack:
+    on_success: always
+os:
+  - linux
+  - osx
 
-install: make get-deps
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y autotools-dev autoconf libtool
+
+install: aclocal && automake --gnu --add-missing \
+         && autoconf \
+         ./configure --prefix /usr/local \
+         && make && make test
 
 before_script:
     - URL="https://raw.githubusercontent.com/flaketill/flaketill-says/testing/dist/aur/flaketill-says"
@@ -8,3 +24,11 @@ before_script:
 
 script:
     - bash <(curl -s $URL)
+
+after_success:
+  if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
+      [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    echo "==>This will deploy!"
+  else
+    echo "==>This will not deploy!"
+  fi
