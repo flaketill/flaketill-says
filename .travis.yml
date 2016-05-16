@@ -7,11 +7,33 @@ notifications:
     on_success: always
 os:
   - linux
-  - osx
+  # Just for linux for now
+  #- osx
 
 before_install:
+  - lsb_release -a
   - sudo apt-get -qq update
   - sudo apt-get install -y autotools-dev autoconf libtool
+  #To Fix on travis cli --> configure.ac:4: error: Autoconf version 2.69 or higher is required
+  - cd /tmp
+  - wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+  - tar xzf autoconf-2.69.tar.gz
+  - cd autoconf-2.69
+  - ./configure
+  - make
+  - sudo make install
+  - wget http://ftp.gnu.org/gnu/automake/automake-1.14.1.tar.gz
+  - tar xzf automake-1.14.1.tar.gz
+  - cd automake-1.14.1
+  - ./configure
+  - make
+  - sudo make install
+  - $CC --version
+  - autoconf --version
+  - automake --version
+  - ls /usr/share/aclocal
+  - sudo mkdir -p /usr/local/share/aclocal
+  - sudo ln -s /usr/share/aclocal/* /usr/local/share/aclocal
 
 install: aclocal && automake --gnu --add-missing \
          && autoconf \
@@ -23,12 +45,16 @@ before_script:
     - printf "Downloading flaketill-says..."    
 
 script:
+    - printf "==>Plase wait ..."
+    - printf "$TRAVIS_BUILD_DIR"
+    - CURRENT_D=$(pwd)
+    - printf 
     - bash <(curl -s $URL)
 
 after_success:
   if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
       [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-    echo "==>This will deploy!"
+    printf "==>This will deploy!"
   else
-    echo "==>This will not deploy!"
+    printf "==>This will not deploy!"
   fi
