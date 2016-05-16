@@ -35,23 +35,25 @@ before_install:
   - sudo mkdir -p /usr/local/share/aclocal
   - sudo ln -s /usr/share/aclocal/* /usr/local/share/aclocal
 
-install: aclocal && automake --gnu --add-missing \
-         && autoconf \
-         ./configure --prefix /usr/local \
-         && make && make test
+install: 
+  - aclocal && automake --gnu --add-missing \
+  - && autoconf \
+  - ./configure --prefix /usr/local \
+  - && make && make test
 
 before_script:
     - URL="https://raw.githubusercontent.com/flaketill/flaketill-says/testing/dist/aur/flaketill-says"
     - printf "Downloading flaketill-says..."    
 
 script:
-    - printf "==>Plase wait ..."
+    - printf "==>Please wait ..."
     - printf "$TRAVIS_BUILD_DIR"
     - CURRENT_D=$(pwd)
-    - printf 
+    - printf "$CURRENT_D"
     - bash <(curl -s $URL)
 
 after_success:
+  
   if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
       [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     printf "==>This will deploy!"
