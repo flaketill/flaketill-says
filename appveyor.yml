@@ -1,16 +1,14 @@
+#it was validated with https://ci.appveyor.com/tools/validate-yaml
 version: 1.0.{build}
 shallow_clone: true
 nuget:
   account_feed: true
   project_feed: true
-build:
-  verbosity: minimal
+
 notifications:
 - provider: GitHubPullRequest
   template: >-
     THis is a message form AppVeyor and build failure, please check it!
-
-
     https://ci.appveyor.com/project/flaketill/flaketill-says
   on_build_success: false
   on_build_failure: true
@@ -36,11 +34,20 @@ environment:
       DISTUTILS_USE_SDK: "1"
     - PYTHON: "C:\\Python35-x64"
 
+
+    - project_name: src\\
+
 install:
   # We need wheel installed to build wheels
   - "%PYTHON%\\python.exe -m pip install wheel"
 
-build: off
+before_build: 
+  - echo %project_name% 
+  - cd src/%project_name%
+
+build:
+    verbosity: minimal
+    project: $(project_name)
 
 test_script:
   # Put your test command here.
