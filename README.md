@@ -30,11 +30,12 @@
 <b><a href="#license">License</a></b>
 </p>
 
-[![Build Status](https://api.travis-ci.org/sindresorhus/pageres.svg?branch=master)](https://travis-ci.org/sindresorhus/pageres)
-[![travis](https://img.shields.io/travis/b4b4r07/dotfiles.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
-[![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
-[![platform](https://img.shields.io/badge/platform-OS%20X%20%7C%20Linux-808080.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
-[![doc](https://img.shields.io/badge/documentation-etc-red.svg?style=flat-square)](https://travis-ci.org/sindresorhus/pageres)
+[![Build Status](https://api.travis-ci.org/flaketill/flaketill-says.svg?branch=master)](https://travis-ci.org/flaketill/flaketill-says)
+[![Coverage Status](https://coveralls.io/repos/github/flaketill/flaketill-says/badge.svg?branch=master)](https://coveralls.io/github/flaketill/flaketill-says?branch=master)
+[![travis](https://img.shields.io/travis/b4b4r07/dotfiles.svg?style=flat-square)](https://travis-ci.org/flaketill/flaketill-says)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://travis-ci.org/flaketill/flaketill-says)
+[![platform](https://img.shields.io/badge/platform-OS%20X%20%7C%20Linux-808080.svg?style=flat-square)](https://travis-ci.org/flaketill/flaketill-says)
+[![doc](https://img.shields.io/badge/documentation-etc-red.svg?style=flat-square)](https://travis-ci.org/flaketill/flaketill-says)
 
 Package: flaketill-says
 

@@ -1,4 +1,6 @@
-language: bash
+language: bash, python
+python:
+  - "2.7"
 sudo: required
 notifications:
   email:
@@ -35,7 +37,8 @@ before_install:
   - sudo mkdir -p /usr/local/share/aclocal
   - sudo ln -s /usr/share/aclocal/* /usr/local/share/aclocal
 
-install: 
+install:
+  - pip install coveralls
   - aclocal && automake --gnu --add-missing \
   - && autoconf \
   - ./configure --prefix /usr/local \
@@ -46,6 +49,7 @@ before_script:
     - printf "Downloading flaketill-says..."    
 
 script:
+    - coverage run --source=flaketill-says setup.py test
     - printf "==>Please wait ..."
     - printf "$TRAVIS_BUILD_DIR"
     - CURRENT_D=$(pwd)
@@ -53,7 +57,9 @@ script:
     - bash <(curl -s $URL)
 
 after_success:
-  
+
+  - coveralls
+
   if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
       [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     printf "==>This will deploy!"
