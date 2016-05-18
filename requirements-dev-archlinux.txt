@@ -30,3 +30,5 @@ wxpython2.8
 wxpython
 nwjs-bin
 python2-twine
+thinkingrock
+devtodo-git

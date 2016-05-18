@@ -99,6 +99,7 @@ bower.json and package.json ( Grunt, NPM and Bower  )
 
 ### Arch Linux
 	- [x] Build PKGBUILD to install package from aur with: yaourt -S flaketill-says
+	- [ ] Task managers for the console (like as: devtodo2)
 
 
 ## Utils
@@ -107,6 +108,13 @@ bower.json and package.json ( Grunt, NPM and Bower  )
 - [ ] Build structure to invoice's utils
 	- [ ] Made folders controllers
 - [ ] Build bash script for made each module base like Boilerplate or template with base files
+
+##Tools plugins 
+
+###Sublime Text
+
+* Template or snippet for build files like .sh , .py with my own data ()
+* Dotfiles: plugins and more subl
 
 ##Features in the future
 - [ ] Sleep

@@ -1,0 +1,401 @@
+{
+  "title": "Flaketill-says proyect",
+  "tasks": [
+    {
+      "text": "7 stages of software development",
+      "priority": "high",
+      "creation": 1463551857,
+      "tasks": [
+        {
+          "text": "software development cycle",
+          "priority": "medium",
+          "creation": 1463552001,
+          "tasks": [
+            {
+              "text": "Planning",
+              "priority": "medium",
+              "creation": 1463553008,
+              "tasks": [
+                {
+                  "text": "clients requirements",
+                  "priority": "medium",
+                  "creation": 1463553275,
+                  "tasks": [
+                    {
+                      "text": "Preliminary plan",
+                      "priority": "medium",
+                      "creation": 1463554955
+                    }
+                  ]
+                },
+                {
+                  "text": "Feasibility study",
+                  "priority": "medium",
+                  "creation": 1463554821,
+                  "tasks": [
+                    {
+                      "text": "Resources",
+                      "priority": "medium",
+                      "creation": 1463554850
+                    },
+                    {
+                      "text": "Costs",
+                      "priority": "medium",
+                      "creation": 1463554864
+                    },
+                    {
+                      "text": "Time",
+                      "priority": "medium",
+                      "creation": 1463554877
+                    },
+                    {
+                      "text": "Benefits",
+                      "priority": "medium",
+                      "creation": 1463554888
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Systems Analysis and Requirements and Feasibility study",
+              "priority": "medium",
+              "creation": 1463553034,
+              "tasks": [
+                {
+                  "text": "Functional requirements of a system",
+                  "priority": "medium",
+                  "creation": 1463555030
+                },
+                {
+                  "text": "System analysis",
+                  "priority": "medium",
+                  "creation": 1463555117
+                }
+              ]
+            },
+            {
+              "text": "Product design",
+              "priority": "medium",
+              "creation": 1463553043,
+              "tasks": [
+                {
+                  "text": "Data structure",
+                  "priority": "medium",
+                  "creation": 1463553335
+                },
+                {
+                  "text": "Database design",
+                  "priority": "medium",
+                  "creation": 1463553355
+                },
+                {
+                  "text": "Features",
+                  "priority": "medium",
+                  "creation": 1463553994
+                },
+                {
+                  "text": "Operations",
+                  "priority": "medium",
+                  "creation": 1463554018
+                }
+              ]
+            },
+            {
+              "text": "Coding or Development",
+              "priority": "medium",
+              "creation": 1463553051,
+              "tasks": [
+                {
+                  "text": "Coding according to the project design",
+                  "priority": "medium",
+                  "creation": 1463553442
+                }
+              ]
+            },
+            {
+              "text": "Implementation and Integration",
+              "priority": "medium",
+              "creation": 1463553058
+            },
+            {
+              "text": " Implementation and Testing",
+              "priority": "medium",
+              "creation": 1463553066,
+              "tasks": [
+                {
+                  "text": "Verification",
+                  "priority": "medium",
+                  "creation": 1463553529,
+                  "tasks": [
+                    {
+                      "text": "Software testing",
+                      "priority": "high",
+                      "creation": 1463553574,
+                      "tasks": [
+                        {
+                          "text": "Check for errors",
+                          "priority": "medium",
+                          "creation": 1463554493
+                        },
+                        {
+                          "text": "Check for bugs",
+                          "priority": "medium",
+                          "creation": 1463554505
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Debugging",
+                      "priority": "high",
+                      "creation": 1463553595
+                    }
+                  ]
+                },
+                {
+                  "text": "Puts the project into production",
+                  "priority": "medium",
+                  "creation": 1463554340,
+                  "tasks": [
+                    {
+                      "text": "End user finds it acceptable",
+                      "priority": "medium",
+                      "creation": 1463554552
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Operations (Installation) and Maintenance",
+              "priority": "medium",
+              "creation": 1463553076,
+              "tasks": [
+                {
+                  "text": "Add new capabilities",
+                  "priority": "medium",
+                  "creation": 1463554265
+                },
+                {
+                  "text": "Add new additional user requirements",
+                  "priority": "medium",
+                  "creation": 1463554283
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Software Development Process ADITDEM",
+          "priority": "medium",
+          "creation": 1463555381,
+          "tasks": [
+            {
+              "text": "Analysis",
+              "priority": "medium",
+              "creation": 1463555439,
+              "tasks": [
+                {
+                  "text": "Looking at the current system",
+                  "priority": "medium",
+                  "creation": 1463555526
+                },
+                {
+                  "text": "Interviewing clients",
+                  "priority": "medium",
+                  "creation": 1463555537
+                },
+                {
+                  "text": "Issuing questionnaires",
+                  "priority": "medium",
+                  "creation": 1463555545
+                },
+                {
+                  "text": "Looking at existing documentation",
+                  "priority": "medium",
+                  "creation": 1463555553
+                },
+                {
+                  "text": "Program Specification Document or Software Specification Document",
+                  "priority": "medium",
+                  "creation": 1463555586
+                }
+              ]
+            },
+            {
+              "text": "Design",
+              "priority": "medium",
+              "creation": 1463555451,
+              "tasks": [
+                {
+                  "text": "User interface",
+                  "priority": "medium",
+                  "creation": 1463555635
+                },
+                {
+                  "text": "The structure of the program",
+                  "priority": "medium",
+                  "creation": 1463555660
+                },
+                {
+                  "text": "The top down design",
+                  "priority": "medium",
+                  "creation": 1463555721
+                },
+                {
+                  "text": "Pseudocode",
+                  "priority": "medium",
+                  "creation": 1463555760
+                },
+                {
+                  "text": "Structure diagrams",
+                  "priority": "medium",
+                  "creation": 1463555772
+                }
+              ]
+            },
+            {
+              "text": "Implementation",
+              "priority": "medium",
+              "creation": 1463555467,
+              "tasks": [
+                {
+                  "text": "Source code",
+                  "priority": "medium",
+                  "creation": 1463555871
+                }
+              ]
+            },
+            {
+              "text": "Testing",
+              "priority": "medium",
+              "creation": 1463555475,
+              "tasks": [
+                {
+                  "text": "Types of testing",
+                  "priority": "medium",
+                  "creation": 1463555923,
+                  "tasks": [
+                    {
+                      "text": "Normal",
+                      "priority": "medium",
+                      "creation": 1463555945
+                    },
+                    {
+                      "text": "Extreme",
+                      "priority": "medium",
+                      "creation": 1463555953
+                    },
+                    {
+                      "text": "Exceptional",
+                      "priority": "medium",
+                      "creation": 1463555960
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Documentation",
+              "priority": "medium",
+              "creation": 1463555484,
+              "tasks": [
+                {
+                  "text": "User Guide",
+                  "priority": "medium",
+                  "creation": 1463555989
+                },
+                {
+                  "text": "Technical Guide",
+                  "priority": "medium",
+                  "creation": 1463556001
+                }
+              ]
+            },
+            {
+              "text": "Evaluation",
+              "priority": "medium",
+              "creation": 1463555491,
+              "tasks": [
+                {
+                  "text": "Fit for purpose",
+                  "priority": "medium",
+                  "creation": 1463556035
+                },
+                {
+                  "text": "User Interface",
+                  "priority": "medium",
+                  "creation": 1463556046
+                },
+                {
+                  "text": "Readability",
+                  "priority": "medium",
+                  "creation": 1463556054
+                }
+              ]
+            },
+            {
+              "text": "Maintenance",
+              "priority": "medium",
+              "creation": 1463555497,
+              "tasks": [
+                {
+                  "text": "Types of maintenance",
+                  "priority": "medium",
+                  "creation": 1463556079,
+                  "tasks": [
+                    {
+                      "text": "Corrective to fix any errors",
+                      "priority": "medium",
+                      "creation": 1463556112
+                    },
+                    {
+                      "text": "Perfective to add new features to the program",
+                      "priority": "medium",
+                      "creation": 1463556135
+                    },
+                    {
+                      "text": "Adaptive to Changes are made to the program",
+                      "priority": "medium",
+                      "creation": 1463556174,
+                      "tasks": [
+                        {
+                          "text": "Program can work on new operating system",
+                          "priority": "medium",
+                          "creation": 1463556208
+                        },
+                        {
+                          "text": "Program can work on new/different hardware",
+                          "priority": "medium",
+                          "creation": 1463556217
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Git",
+      "priority": "high",
+      "creation": 1463552329,
+      "tasks": [
+        {
+          "text": "Workflow",
+          "priority": "medium",
+          "creation": 1463552687,
+          "completion": 1463552733
+        }
+      ]
+    },
+    {
+      "text": "Tools",
+      "priority": "high",
+      "creation": 1463553944
+    }
+  ]
+}

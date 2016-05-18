@@ -235,6 +235,18 @@ To test a Make i write a boostrap for this
 $ ./boostrap
 ```
 
+To snippet:
+
+https://gist.github.com/flaketill/74d7b1a6384f19f6dc88c75f5a05aad4
+
+```xml
+#!/usr/bin/env sh
+# -*- coding: UTF-8 -*- 
+# Copyright (C) 
+# 
+#
+```
+
 ##How to package and distribute your apps
 
 ##Python
