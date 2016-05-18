@@ -37,6 +37,15 @@ bin/*
 sbin
 tmp
 
+########################
+## Sublime Text files
+########################
+
+*.pyc
+*.sublime-project
+*.thTheme.cache
+*.sublime-workspace
+
 
 #############
 ## NPM
