@@ -32,3 +32,6 @@ nwjs-bin
 python2-twine
 thinkingrock
 devtodo-git
+lighttable
+sublime-text-dev
+atom

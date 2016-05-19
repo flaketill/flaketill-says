@@ -99,7 +99,7 @@ bower.json and package.json ( Grunt, NPM and Bower  )
 
 ### Arch Linux
 	- [x] Build PKGBUILD to install package from aur with: yaourt -S flaketill-says
-	- [ ] Task managers for the console (like as: devtodo2)
+	- [ ] Task managers for the console (like as: devtodo)2
 
 
 ## Utils

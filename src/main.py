@@ -48,3 +48,5 @@
 
 
 """Convenience wrapper for starting the launcher."""
+
+print ("hello word!")
