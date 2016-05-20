@@ -48,6 +48,34 @@ tmp
 
 
 #############
+## Vagrant stuff
+#############
+
+/.vagrant
+/website/.vagrant
+/website/build
+/vagrant-spec.config.rb
+
+#############
+## Bundler/Rubygems
+#############
+
+*.gem
+.bundle
+pkg/*
+tags
+/Gemfile.lock
+test/tmp/
+vendor/
+/exec
+
+# Ruby Managers
+.rbenv
+.ruby-gemset
+.ruby-version
+.rvmrc
+
+#############
 ## NPM
 #############
 npm-debug.log
@@ -71,6 +99,8 @@ bower_components
 
 
 # Packages
+#
+*.eggs
 *.egg
 *.egg-info
 dist
@@ -86,6 +116,11 @@ develop-eggs
 # Installer logs
 pip-log.txt
 
+#############
+## Test suites
+#############
+#
+.tox
 
 ############
 ## Windows
@@ -96,4 +131,3 @@ Thumbs.db
 
 # Folder config file
 Desktop.ini
-
