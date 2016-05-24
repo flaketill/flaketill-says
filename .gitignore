@@ -32,6 +32,12 @@ Makefile.in
 build
 lib/*
 
+
+#Tox 
+
+\.tox
+.tox/*
+
 #Ignorate exes
 bin/*
 sbin
